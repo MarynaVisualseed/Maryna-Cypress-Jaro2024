@@ -69,4 +69,3 @@ export class RegistrationPage extends MainPage {
   }
 }
 // YOUR ACCOUNT HAS BEEN CREATED!
-// Congratulations! Your new account has been successfully created!

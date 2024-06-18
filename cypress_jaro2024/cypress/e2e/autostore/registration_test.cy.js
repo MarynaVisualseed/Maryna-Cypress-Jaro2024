@@ -1,13 +1,8 @@
 import { faker } from "@faker-js/faker";
-//import { MainPage } from "../../page-objects/autostore/main_page";
+
 import { RegistrationPage } from "../../page-objects/autostore/register_page";
 
 describe("User Registration", () => {
-  //   beforeEach(() => {
-  //     new MainPage().openAutoStore().clickLoginOrRegister();
-  //     new RegistrationPage().clickContinue();
-  //   });
-
   it("Vyplnění formuláře Automation Test Store", () => {
     const userData = {
       firstName: faker.name.firstName(),
