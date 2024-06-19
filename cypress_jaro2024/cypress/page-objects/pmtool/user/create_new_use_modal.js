@@ -38,4 +38,13 @@ export class CreateNewUserModal {
     this.saveButton.get().click();
     return new UsersPage();
   }
+  typeFirstName(firstName) {
+    this.firstNameInput.get().type(firstName);
+    return this;
+  }
+
+  typeLastName(lastName) {
+    this.lastNameInput.get().type(lastName);
+    return this;
+  }
 }

@@ -1,4 +1,5 @@
 import { HeaderSection } from "./common/header_section";
+import { CreateNewUserModal } from "./user/create_new_user_modal";
 
 export class UsersPage extends HeaderSection {
   constructor() {
@@ -26,6 +27,7 @@ export class UsersPage extends HeaderSection {
     cy.get(this.addUserButton).should("have.text", addUserButtonText);
     return this;
   }
+
   clickAddUser() {
     cy.get(this.addUserButton).click();
     return new CreateNewUserModal();
