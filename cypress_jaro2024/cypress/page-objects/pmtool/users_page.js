@@ -1,5 +1,5 @@
-import { HeaderSection } from "./common/header_section";
-import { CreateNewUserModal } from "./user/create_new_user_modal";
+import { HeaderSection } from "../pmtool/common/header_section";
+import { CreateNewUserModal } from "../pmtool/user/create_new_use_modal";
 
 export class UsersPage extends HeaderSection {
   constructor() {

@@ -1,7 +1,11 @@
 export const customElement = (selector) => {
   const element = {
+    // isVisible() {
+    //   cy.get(selector).should("be.visible");
+    //   return element;
+    // },
     isVisible() {
-      cy.get(selector).should("be.visible");
+      cy.get(selector, { timeout: 10000 }).should("exist").and("be.visible");
       return element;
     },
     isNotVisible() {
@@ -30,6 +34,11 @@ export const customElement = (selector) => {
     },
     scrollIntoView() {
       cy.get(selector).scrollIntoView();
+      return element;
+    },
+
+    exists() {
+      cy.get(selector, { timeout: 20000 }).should("exist");
       return element;
     },
     get() {
